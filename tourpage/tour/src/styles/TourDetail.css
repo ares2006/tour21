@@ -1,0 +1,170 @@
+.tour-detail {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease-in-out;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tour-detail-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tour-detail-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tour-detail-info {
+  font-size: 18px;
+  color: #444;
+  margin: 6px 0;
+}
+
+.tour-detail-description {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: #555;
+}
+
+.book-btn {
+  padding: 12px 24px;
+  background-color: #2b7a78;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  background-color: #205e5d;
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal {
+  background: #fdfdfd;
+  border-radius: 14px;
+  padding: 30px 24px;
+  width: 95%;
+  max-width: 480px;
+  position: relative;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s ease-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 26px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #222;
+}
+
+.booking-form,
+.payment-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form h3,
+.payment-fields h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.booking-form label,
+.payment-fields label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #444;
+}
+
+.booking-form input,
+.payment-fields input,
+.booking-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 4px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+.booking-form input:focus,
+.payment-fields input:focus,
+.booking-form select:focus {
+  border-color: #2b7a78;
+  outline: none;
+}
+
+.booking-form button,
+.payment-fields button {
+  padding: 12px;
+  background-color: #3aafa9;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.booking-form button:hover,
+.payment-fields button:hover {
+  background-color: #2b7a78;
+  transform: translateY(-1px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
